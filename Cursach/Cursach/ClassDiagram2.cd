@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Cursach.Patterns.CinemaHallPrototype" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Patterns\CinemaHallPrototype.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.CinemaHall" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="_seats" Type="Cursach.Patterns.Seat" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.406" Y="2.191" />
+        <Point X="8.406" Y="2.285" />
+        <Point X="9.25" Y="2.285" />
+        <Point X="9.25" Y="2.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AEAAAQAAAAEAAAAACkCACAAAABQAAAAAEAAAAABAABA=</HashCode>
+      <FileName>Patterns\CinemaHallPrototype.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_hallType" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_seats" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Cursach.Patterns.ChooseHallStrategy" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Patterns\HallStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.Cinema" Collapsed="true">
+    <Position X="5" Y="1" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="_halls" Type="Cursach.Patterns.CinemaHall" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.5" Y="1.313" />
+        <Point X="7.25" Y="1.313" />
+        <Point X="7.25" Y="1.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.012" Y="0.207" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BACFICAAAAAQEAAAABABBAwQAAEAAIAoAIAAAAAAAAA=</HashCode>
+      <FileName>Patterns\CinemaSingleton.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_halls" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Cursach.Patterns.TwoDimentionalHall" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Patterns\HallStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.ThreeDimentionalHall" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Patterns\HallStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.Seat" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="Cursach.Patterns.SeatPrototype" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="2.875" />
+        <Point X="8.75" Y="2.875" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>CAAAAIEAAAAQAAAFAEAACAAAAAACAgAAAIAAAQBAAhA=</HashCode>
+      <FileName>Patterns\SeatPrototype.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.SeatPrototype" Collapsed="true">
+    <Position X="6.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Patterns\SeatPrototype.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.DayPart" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="_successor" Type="Cursach.Patterns.DayPart" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="3.25" />
+        <Point X="5.25" Y="3" />
+        <Point X="6.062" Y="3" />
+        <Point X="6.062" Y="3.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAABAAA=</HashCode>
+      <FileName>Patterns\SeanceChain.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_successor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Cursach.Patterns.MorningOrNight" Collapsed="true">
+    <Position X="5.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Patterns\SeanceChain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.Day" Collapsed="true">
+    <Position X="3.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Patterns\SeanceChain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.Evening" Collapsed="true">
+    <Position X="7.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Patterns\SeanceChain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.SeatState" Collapsed="true">
+    <Position X="10.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Patterns\SeatState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.CheapSeat" Collapsed="true">
+    <Position X="9" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Patterns\SeatState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.OrdinarySeat" Collapsed="true">
+    <Position X="12.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Patterns\SeatState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.LuxSeat" Collapsed="true">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Patterns\SeatState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.AbstractMovie" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAAAAEQAAAAAAAAAkQIAAIUWAAAFAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Patterns\MovieDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.Movie" Collapsed="true">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="Cursach.Patterns.AbstractMovie" FixedToPoint="true">
+      <Path>
+        <Point X="3.25" Y="1.062" />
+        <Point X="3.25" Y="1.375" />
+        <Point X="4" Y="1.375" />
+        <Point X="4" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAUAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Patterns\MovieDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.Decorator" Collapsed="true">
+    <Position X="1.25" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="Cursach.Patterns.AbstractMovie" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.25" Y="1.062" />
+        <Point X="3.25" Y="1.375" />
+        <Point X="2.312" Y="1.375" />
+        <Point X="2.312" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Movie" Type="Cursach.Patterns.AbstractMovie" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.188" Y="1.75" />
+        <Point X="2.188" Y="1.015" />
+        <Point X="2.5" Y="1.015" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAEAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Patterns\MovieDecorator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Movie" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Cursach.Patterns.PremiereMarkup" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Patterns\MovieDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.StudentSale" Collapsed="true">
+    <Position X="2.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Patterns\MovieDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.VirtualTicket" Collapsed="true">
+    <Position X="17.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAAAIAAAAAAAAABEEAAAEQAAACAAgAAACAAAA=</HashCode>
+      <FileName>Patterns\TicketVirtualProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.Ticket" Collapsed="true">
+    <Position X="16.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAEAAAAAAAAAAAAAAACAAAAAAAAAQA=</HashCode>
+      <FileName>Patterns\TicketVirtualProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.ProxyTicket" Collapsed="true">
+    <Position X="18.75" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="Cursach.Patterns.VirtualTicket" FixedToPoint="true">
+      <Path>
+        <Point X="18.25" Y="3.312" />
+        <Point X="18.25" Y="3.7" />
+        <Point X="19.5" Y="3.7" />
+        <Point X="19.5" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="ticket" Type="Cursach.Patterns.Ticket" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.75" Y="4.658" />
+        <Point X="18.375" Y="4.658" />
+        <Point X="18.375" Y="4.25" />
+        <Point X="18" Y="4.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEIAVEAEAAAASAAAAAAAAAEEAAACAgAAAAE=</HashCode>
+      <FileName>Patterns\TicketVirtualProxy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ticket" />
+      <Field Name="_ticketPay" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Cursach.Patterns.CashTicket" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.25" Y="5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Patterns\TicketPayBridge.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cursach.Patterns.CardTicket" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.5" Y="5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Patterns\TicketPayBridge.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cursach.User" Collapsed="true">
+    <Position X="15.5" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IEUAABAAAAAAAAAAACAAQAAAgAEAAAAGEgAQIQAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_tickets" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Cursach.Patterns.TicketsList" Collapsed="true">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Patterns\TicketsListTemplateMethod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.AllFilmsList" Collapsed="true">
+    <Position X="17.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Patterns\TicketsListTemplateMethod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.WatchedFilmsList" Collapsed="true">
+    <Position X="15.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Patterns\TicketsListTemplateMethod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.ComingFilmsList" Collapsed="true">
+    <Position X="19" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Patterns\TicketsListTemplateMethod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursach.Patterns.Seance" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="_hall" Type="Cursach.Patterns.CinemaHall" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.5" Y="2.313" />
+        <Point X="6.74" Y="2.313" />
+        <Point X="6.74" Y="1.938" />
+        <Point X="7" Y="1.938" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.06" Y="0.046" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="dayPart" Type="Cursach.Patterns.DayPart" FixedFromPoint="true">
+      <Path>
+        <Point X="6.312" Y="2.562" />
+        <Point X="6.312" Y="3.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.027" Y="0.416" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAIEBgAAAAAAUIAAAAAAAAAAAIAAAAAAAAAQA=</HashCode>
+      <FileName>Patterns\SeanceChain.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_hall" />
+      <Field Name="dayPart" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="Cursach.Patterns.ITicketPay" Collapsed="true">
+    <Position X="21.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Patterns\TicketPayBridge.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
